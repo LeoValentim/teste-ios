@@ -55,7 +55,7 @@ A API que calcula o os valores futuros se encontram em [outro projeto Open Sourc
     ```
 
 ### Pré-requisitos: 
- - Swift 4;
+ - Swift;
  - Target iOS 11;
  - Utilizar autolayout;
  - Usamos SwiftLint aqui (https://github.com/realm/SwiftLint) e gostaríamos que seu código seguisse o mesmo padrão que a gente :) As regras estão no ./linter/.swiftlint.yml;
