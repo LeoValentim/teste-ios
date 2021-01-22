@@ -1,4 +1,4 @@
-![Easynvest](https://camo.githubusercontent.com/c4ee611d69893fec43b903eb88a444530eaf8e7f/68747470733a2f2f7777772e656173796e766573742e636f6d2e62722f66617669636f6e2e69636f)
+![Easynvest](https://avatars.githubusercontent.com/u/32341420?s=200&v=4)
 
 # Teste de iOS Developer Easynvest
 Este teste é apresentado aos candidatos as vagas de iOS Developer para avaliar os quesitos técnicos.
@@ -17,7 +17,7 @@ Para o desenho das telas, não precisa se preocupar com a interface na horizonta
 ## Consumindo o serviço de cálculo
 A API que calcula o os valores futuros se encontram em [outro projeto Open Source, aqui](https://github.com/easynvest/api-simulator-calc). Abaixo segue algumas informações sobre como utilizamos esse serviço no nosso simulador.
 
- - **URL**: https://api-simulator-calc.easynvest.com.br/calculator/simulate
+ - **URL**: https://run.mocky.io/v3/ecfaebf5-782b-4b24-ae4f-23b5c3a861da
  - **Method**: GET
  - **URL Params**:
     ```javascript
