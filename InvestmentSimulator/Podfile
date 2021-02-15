@@ -1,0 +1,10 @@
+platform :ios, '11.0'
+
+target 'InvestmentSimulator' do
+  use_frameworks!
+
+  pod 'Cartography'
+  pod 'AnyFormatKit'
+  pod 'CurrencyTextField'
+
+end

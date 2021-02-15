@@ -1,0 +1,24 @@
+PODS:
+  - AnyFormatKit (2.4.0)
+  - Cartography (4.0.0)
+  - CurrencyTextField (2.3)
+
+DEPENDENCIES:
+  - AnyFormatKit
+  - Cartography
+  - CurrencyTextField
+
+SPEC REPOS:
+  trunk:
+    - AnyFormatKit
+    - Cartography
+    - CurrencyTextField
+
+SPEC CHECKSUMS:
+  AnyFormatKit: 2ca2ad3f6fa0f6862a650342141d2bcaa42e9186
+  Cartography: c5626d29056b20f1e95c017326ee4df57cc39ad8
+  CurrencyTextField: 75d8ee80cf245925684b34c9a49ba886f258e2dc
+
+PODFILE CHECKSUM: 5c9d6e942e36bc89d31f8f70789c29a0b22e7c12
+
+COCOAPODS: 1.9.3

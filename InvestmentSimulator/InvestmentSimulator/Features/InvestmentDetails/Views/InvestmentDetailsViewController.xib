@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvestmentDetailsViewController" customModule="InvestmentSimulator" customModuleProvider="target">
+            <connections>
+                <outlet property="firstDetailsListView" destination="lHL-gb-Zkc" id="Lq7-yD-1Vj"/>
+                <outlet property="grossAmountLabel" destination="F8u-NV-NsZ" id="mlk-7L-94u"/>
+                <outlet property="grossAmountProfitLabel" destination="Zbl-6P-Z4C" id="Tv3-5G-dyl"/>
+                <outlet property="secondDetailsListView" destination="okI-7r-NEL" id="Db7-Uw-yf3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPI-ZN-2oY">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXU-ls-7dw">
+                            <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZUW-Pt-WLe">
+                                    <rect key="frame" x="24" y="24" width="366" height="85"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado da simulação" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdO-ra-s9J">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="14.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0000,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F8u-NV-NsZ">
+                                            <rect key="frame" x="0.0" y="22.5" width="366" height="41"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rendimento total de R$ 88,69" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-6P-Z4C">
+                                            <rect key="frame" x="0.0" y="71.5" width="366" height="13.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                            <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubo-rI-60m">
+                                    <rect key="frame" x="24" y="133" width="366" height="593"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="cDK-RO-Zj9">
+                                            <rect key="frame" x="0.0" y="130.5" width="366" height="332"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHL-gb-Zkc" customClass="InvestmentDetailsListView" customModule="InvestmentSimulator" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="150"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" priority="250" constant="150" id="LEd-NK-xyq"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okI-7r-NEL" customClass="InvestmentDetailsListView" customModule="InvestmentSimulator" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="182" width="366" height="150"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" priority="250" constant="150" id="tTv-3U-41l"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="cDK-RO-Zj9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ubo-rI-60m" secondAttribute="top" id="EZd-t8-d1u"/>
+                                        <constraint firstItem="cDK-RO-Zj9" firstAttribute="leading" secondItem="ubo-rI-60m" secondAttribute="leading" id="XXB-m7-vT6"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cDK-RO-Zj9" secondAttribute="bottom" id="krw-ge-MEI"/>
+                                        <constraint firstAttribute="trailing" secondItem="cDK-RO-Zj9" secondAttribute="trailing" id="sxR-2x-1cb"/>
+                                        <constraint firstItem="cDK-RO-Zj9" firstAttribute="centerY" secondItem="ubo-rI-60m" secondAttribute="centerY" id="vA1-nt-RlA"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOM-gh-3dr" customClass="CustomButton" customModule="InvestmentSimulator" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="750" width="366" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="ak1-ow-1dE"/>
+                                    </constraints>
+                                    <state key="normal" title="Simular novamente"/>
+                                    <connections>
+                                        <action selector="simulateAgainAction:" destination="-1" eventType="touchUpInside" id="qHW-cz-nhy"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="TOM-gh-3dr" secondAttribute="trailing" constant="24" id="IvC-Fb-Z8G"/>
+                                <constraint firstItem="ZUW-Pt-WLe" firstAttribute="top" secondItem="MXU-ls-7dw" secondAttribute="top" constant="24" id="Mxb-40-OhG"/>
+                                <constraint firstItem="ubo-rI-60m" firstAttribute="leading" secondItem="MXU-ls-7dw" secondAttribute="leading" constant="24" id="P3q-DV-vb2"/>
+                                <constraint firstItem="ubo-rI-60m" firstAttribute="top" secondItem="ZUW-Pt-WLe" secondAttribute="bottom" constant="24" id="UD5-Io-Pe9"/>
+                                <constraint firstAttribute="bottom" secondItem="TOM-gh-3dr" secondAttribute="bottom" constant="24" id="aLU-QM-6uv"/>
+                                <constraint firstAttribute="trailing" secondItem="ubo-rI-60m" secondAttribute="trailing" constant="24" id="cQ4-dI-8sU"/>
+                                <constraint firstItem="ZUW-Pt-WLe" firstAttribute="leading" secondItem="MXU-ls-7dw" secondAttribute="leading" constant="24" id="gUV-cB-320"/>
+                                <constraint firstAttribute="trailing" secondItem="ZUW-Pt-WLe" secondAttribute="trailing" constant="24" id="hTq-Fi-mY8"/>
+                                <constraint firstItem="TOM-gh-3dr" firstAttribute="top" secondItem="ubo-rI-60m" secondAttribute="bottom" constant="24" id="xqD-Ap-Omh"/>
+                                <constraint firstItem="TOM-gh-3dr" firstAttribute="leading" secondItem="MXU-ls-7dw" secondAttribute="leading" constant="24" id="y2g-ya-j1u"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ihY-XQ-Up2" firstAttribute="bottom" secondItem="MXU-ls-7dw" secondAttribute="bottom" id="1xi-h7-4R8"/>
+                        <constraint firstItem="MXU-ls-7dw" firstAttribute="leading" secondItem="ihY-XQ-Up2" secondAttribute="leading" id="S0N-oI-uhK"/>
+                        <constraint firstItem="MXU-ls-7dw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ihY-XQ-Up2" secondAttribute="top" id="fRE-72-YIl"/>
+                        <constraint firstItem="MXU-ls-7dw" firstAttribute="trailing" secondItem="ihY-XQ-Up2" secondAttribute="trailing" id="h0E-SD-xlD"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="ihY-XQ-Up2"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="guV-QO-wdu"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WPI-ZN-2oY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="18f-Pr-OhL"/>
+                <constraint firstItem="WPI-ZN-2oY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="DVr-u6-cI1"/>
+                <constraint firstAttribute="bottom" secondItem="WPI-ZN-2oY" secondAttribute="bottom" id="KfN-1A-SGR"/>
+                <constraint firstItem="MXU-ls-7dw" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="LEk-P7-YeR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="MXU-ls-7dw" secondAttribute="top" id="Ox8-O4-KdZ"/>
+                <constraint firstItem="MXU-ls-7dw" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" priority="250" id="hie-TE-LyY"/>
+                <constraint firstItem="WPI-ZN-2oY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rLP-ET-Yic"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="123.88392857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
